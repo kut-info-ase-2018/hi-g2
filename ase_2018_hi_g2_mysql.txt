@@ -16,7 +16,8 @@ MariaDB [ase_2018_hi_g2]> show columns from LAB_INFO;
 
 create table LAB_FACE(location varchar(20) not null, face_count int, primary key(location));
 
-MariaDB [ase_2018_hi_g2]> show columns from LAB_FACE;+------------+-------------+------+-----+---------+-------+
+MariaDB [ase_2018_hi_g2]> show columns from LAB_FACE;
++------------+-------------+------+-----+---------+-------+
 | Field      | Type        | Null | Key | Default | Extra |
 +------------+-------------+------+-----+---------+-------+
 | location   | varchar(20) | NO   | PRI | NULL    |       |
@@ -27,11 +28,12 @@ MariaDB [ase_2018_hi_g2]> show columns from LAB_FACE;+------------+-------------
 
 create table LAB_SENSOR(location varchar(20) not null, sensor_count int, primary key(location));
 
-MariaDB [ase_2018_hi_g2]> show columns from LAB_FACE;+------------+-------------+------+-----+---------+-------+
-| Field      | Type        | Null | Key | Default | Extra |
+MariaDB [ase_2018_hi_g2]> show columns from LAB_SENSOR;
 +------------+-------------+------+-----+---------+-------+
-| location   | varchar(20) | NO   | PRI | NULL    |       |
-| face_count | int(11)     | YES  |     | NULL    |       |
-+------------+-------------+------+-----+---------+-------+
+| Field        | Type        | Null | Key | Default | Extra |
++--------------+-------------+------+-----+---------+-------+
+| location     | varchar(20) | NO   | PRI | NULL    |       |
+| sensor_count | int(11)     | YES  |     | NULL    |       |
++--------------+-------------+------+-----+---------+-------+
 2 rows in set (0.00 sec)
 
