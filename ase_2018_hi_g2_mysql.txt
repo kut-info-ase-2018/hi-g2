@@ -29,7 +29,7 @@ MariaDB [ase_2018_hi_g2]> show columns from LAB_FACE;
 create table LAB_SENSOR(location varchar(20) not null, sensor_count int, primary key(location));
 
 MariaDB [ase_2018_hi_g2]> show columns from LAB_SENSOR;
-+------------+-------------+------+-----+---------+-------+
++--------------+-------------+------+-----+---------+-------+
 | Field        | Type        | Null | Key | Default | Extra |
 +--------------+-------------+------+-----+---------+-------+
 | location     | varchar(20) | NO   | PRI | NULL    |       |
